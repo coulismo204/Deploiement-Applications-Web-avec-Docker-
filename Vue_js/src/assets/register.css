@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.register-page {
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* PARTIE GAUCHE */
+.register-left {
+    flex: 1;
+    background: linear-gradient(135deg, #6366f1, #058EF0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px;
+    color: white;
+}
+
+.register-welcome {
+    max-width: 480px;
+}
+
+.register-welcome h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+    line-height: 1.2;
+}
+
+.register-welcome h1 span {
+    color: #fde68a;
+}
+
+.register-welcome p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    margin-bottom: 32px;
+}
+
+.register-quote {
+    background: rgba(255, 255, 255, 0.15);
+    border-left: 4px solid #fde68a;
+    padding: 16px 20px;
+    border-radius: 8px;
+    font-style: italic;
+    font-size: 0.95rem;
+}
+
+/* PARTIE DROITE */
+.register-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f9fafb;
+    padding: 48px;
+}
+
+.register-form-container {
+    width: 100%;
+    max-width: 420px;
+}
+
+.register-form-container h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 4px;
+}
+
+.register-subtitle {
+    color: #6b7280;
+    margin-bottom: 28px;
+    font-size: 0.9rem;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+button {
+    width: 100%;
+    margin-top: 8px;
+    padding: 4px 4px;
+    border-radius: 5px;
+    color: white;
+    background-color: #111827;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+button:hover {
+    background-color: #1f2937;
+}
+
+.register-login-link {
+    text-align: center;
+    font-size: 0.875rem;
+    color: #374151;
+    margin-top: 8px;
+}
+
+/* Style pour les inputs */
+input {
+
+    color: #090909;
+    background-color: white;
+    border: 1px solid #161617;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.register-login-link .color-grey {
+    color: #6366f1;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s;  /*je veux un truc simple donc j'ai mis une transition de 0,2seconde*/
+}
+
+.register-login-link a:hover {
+    color: #4f46e5; /* Un peu plus foncé au survol */
+    text-decoration: underline;
+}
+
+/* Responsivité de la chose Ariel n'inssiste plus mais il n'a pas oublié ! */
+
+@media (max-width: 768px) {
+    .register-page {
+        flex-direction: column;
+    }
+
+    .register-left {
+        padding: 32px 24px;
+    }
+
+    .register-welcome h1 {
+        font-size: 1.75rem;
+    }
+
+    .register-right {
+        padding: 32px 24px;
+    }
+}
+
+/* Animation pour le spinneril normalement c'est une ligne qui charge en haut de la page */
+.mr-2 {
+    margin-right: 0.5rem;
+}

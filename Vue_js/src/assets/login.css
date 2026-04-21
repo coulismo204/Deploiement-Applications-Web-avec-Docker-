@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.page {
+  height: 100vh;
+  background: linear-gradient(180deg, #1c6fb8 0%, #155f9f 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+
+.header {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.logo-white {
+  color: white;
+}
+
+.logo-orange {
+  color: #ff7a2f;
+}
+
+.cadre {
+  width: 400px;
+  padding: 45px 40px;
+  border-radius: 22px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.18),rgba(255, 255, 255, 0.08));
+  backdrop-filter: blur(14px);
+  color: white;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  
+}
+
+
+.titre {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  
+  
+}
+
+.sous-titre {
+  font-size: 14px;
+  opacity: 0.85;
+  margin-bottom: 30px;
+}
+
+.input-group {
+  text-align: left;
+  margin-bottom: 18px;
+}
+
+.input-group label {
+  font-size: 13px;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 14px;
+  border-radius: 14px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.input-group input:focus {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 30px;
+  border: none;
+  background: #ff7a2f;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  display: flex;
+  justify-content: center;
+
+}
+
+.btn:hover {
+  background: #ff6a1f;
+  box-shadow: 0 10px 20px rgba(255, 122, 47, 0.35);
+}
+
+.option {
+  margin: 28px 0;
+  position: relative;
+  text-align: center;
+}
+
+.option span {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.option::before,
+.option::after {
+  content: "";
+  height: 1px;
+  width: 42%;
+  background: rgba(255, 255, 255, 0.25);
+  position: absolute;
+  top: 50%;
+}
+
+.option::before {
+  left: 0;
+}
+
+.option::after {
+  right: 0;
+}
+
+.btn-google {
+  width: 100%;
+  padding: 13px;
+  border-radius: 30px;
+  border: none;
+  background: #f2f2f2;
+  color: #444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-google:hover {
+  background: #e8e8e8;
+}
+
+.btn-google img {
+  width: 18px;
+}
+
+.signup {
+  margin-top: 22px;
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+.signup span {
+  color: #8fd6ff;
+  cursor: pointer;
+}
