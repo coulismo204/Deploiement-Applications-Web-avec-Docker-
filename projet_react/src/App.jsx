@@ -44,7 +44,7 @@ function Register() {
     <div className="register-right" onSubmit={h} >
         <div className="register-form-container">
             <h2>Créer un compte</h2>
-            <p className="register-subtitle">Remplis le formulaire pour rejoindre YOWL</p>
+            <p className="register-subtitle">Remplis le formulaire pour rejoindre les Best</p>
 
             <form className="register-form" onSubmit={handleSubmit}>
                 <div className="form-group">
