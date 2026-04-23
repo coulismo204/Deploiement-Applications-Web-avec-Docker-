@@ -41,7 +41,7 @@ function Register() {
         </div>
     </div>
 
-    <div className="register-right" onSubmit={h} >
+    <div className="register-right" >
         <div className="register-form-container">
             <h2>Créer un compte</h2>
             <p className="register-subtitle">Remplis le formulaire pour rejoindre les Best</p>
@@ -49,17 +49,17 @@ function Register() {
             <form className="register-form" onSubmit={handleSubmit}>
                 <div className="form-group">
                     <label htmlFor="name">Nom complet</label>
-                    <input name="name" type="text" required autoFocus tabIndex="1" autocomplete="name" placeholder="Ton nom complet" value={form.name} onChange={handlechange}/>
+                    <input name="name" type="text" required autoFocus tabIndex="1" autoComplete="name" placeholder="Ton nom complet" value={form.name} onChange={handlechange}/>
                 </div>
 
                 <div className="form-group">
                     <label htmlFor="email">Adresse email</label>
-                    <input name="email" type="email" required tabindex="2" autoComplete="email"  placeholder="email@exemple.com"  value={form.email} onChange={handlechange}/>
+                    <input name="email" type="email" required tabIndex="2" autoComplete="email"  placeholder="email@exemple.com"  value={form.email} onChange={handlechange}/>
                 </div>
 
                 <div className="form-group">
                     <label htmlFor="password">Mot de passe</label>
-                    <input name="password" type="password" required tabindex="4" autoCmplete="new-password" placeholder="Mot de passe" value={form.password} onChange={handlechange}/>
+                    <input name="password" type="password" required tabIndex="4" autoComplete="new-password" placeholder="Mot de passe" value={form.password} onChange={handlechange}/>
                 </div>
 
                 <div className="form-group">
